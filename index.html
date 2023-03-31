@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calcula IMC</title>
+</head>
+<body>
+    <header>
+        <h1>Cryslara Nutricionista</h1>
+    </header>
+    <main>
+        <h2>Meus pacientes</h2> <hr>
+        <label for="filtro" id="label-filtro">Filtrar:</label> <br>
+        <input type="text" id="filtro" placeholder="Digite o nome do paciente">
+        <table >
+            <thead>
+                <tr>
+                    <th id="nome-paciente">Nome</th>
+                    <th id="peso-paciente">Peso(kg)</th>
+                    <th id="altura-paciente">Altura(m)</th>
+                    <th id="gordura-paciente">Gordura Corporal(%)</th>
+                    <th id="imc-paciente">IMC</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-pacientes">
+                <tr class="pacientes">
+                    <td class="info-nome">Paulo</td>
+                    <td class="info-peso"> 100</td>
+                    <td class="info-altura">2</td>
+                    <td class="info-gordura">10</td>
+                    <td class="info-imc"></td>
+                </tr>
+                <tr class="pacientes">
+                    <td class="info-nome">Josias</td>
+                    <td class="info-peso">120</td>
+                    <td class="info-altura">1.8</td>
+                    <td class="info-gordura">10</td>
+                    <td class="info-imc"></td>
+                </tr>
+                <tr class="pacientes">
+                    <td class="info-nome">Carla</td>
+                    <td class="info-peso">1500</td>
+                    <td class="info-altura">1.5</td>
+                    <td class="info-gordura">50</td>
+                    <td class="info-imc"></td>
+                </tr>
+                <tr class="pacientes">
+                    <td class="info-nome">Joaquina</td>
+                    <td class="info-peso">50</td>
+                    <td class="info-altura">1.6</td>
+                    <td class="info-gordura">10</td>
+                    <td class="info-imc"></td>
+                </tr>
+                <tr class="pacientes">
+                    <td class="info-nome">Mauro</td>
+                    <td class="info-peso">80</td>
+                    <td class="info-altura">1.75</td>
+                    <td class="info-gordura">15</td>
+                    <td class="info-imc"></td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="cadastro.php" id="cadastro">
+            <h1>Adicionar novo paciente</h1>
+            <ul class="mensagem-erro">
+
+            </ul>
+            <label for="nome" class="nome-novo-paciente">Nome:</label> <br>
+            <input type="text" id="nome" placeholder="Digite o nome do paciente"> <br>
+
+            <label for="peso" class="peso-novo-paciente">Peso:</label> <br>
+            <input type="text" id="peso" placeholder="Digite o peso do paciente"> <br>
+
+            <label for="altura" class="altura-novo-paciente">Altura:</label> <br>
+            <input type="text" id="altura" placeholder="Digite a altura do paciente"> <br>
+
+            <label for="gordura" class="gordura-novo-paciente">% de Gordura</label> <br>
+            <input type="text" id="gordura" placeholder="Digite a gordura do paciente"> <br>
+
+            <button id="adiciona-paciente">Adicionar</button>
+        </form>
+    </main>
+    <script src="js/calcula-imc.js"></script>
+    <script src="js/formulario-paciente.js"></script>
+    <script src="js/remove-paciente.js"></script>
+    <script src="js/filtra-paciente.js"></script>
+</body>
+</html>
