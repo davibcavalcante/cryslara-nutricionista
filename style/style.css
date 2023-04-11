@@ -11,6 +11,10 @@ body {
     width: 100vw;
 }
 
+main {
+    width: 100vw;
+}
+
 header {
     color: white;
     background-color: lightcoral;
@@ -41,15 +45,14 @@ main #filtro {
 table {
     border-collapse: collapse;
     margin-left: 50px;
+    margin-right: 20px;
 }
 
 th, td {
     text-align: center;
     border: 1px solid black;
-    padding: 5px 10px;
-    width: 30vw;
-    height: 3vw;
-    max-width: 200px;
+    width: 45vw;
+    padding: 5px 0px;
 }
 
 form > h1 {
