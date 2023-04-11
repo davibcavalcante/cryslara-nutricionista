@@ -18,12 +18,12 @@ main {
 header {
     color: white;
     background-color: lightcoral;
-    padding: 5px 0px 5px 50px;
+    padding: 5px 0px 5px 10px;
 }
 
 main > h2 {
     font-weight: lighter;
-    padding: 10px 0px 10px 50px;
+    padding: 10px 0px 10px 10px;
 }
 
 hr {
@@ -32,11 +32,11 @@ hr {
 
 main #label-filtro {
     font-weight: lighter;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 main #filtro {
-    margin-left: 50px;
+    margin-left: 10px;
     margin-bottom: 10px;
     height: 27px;
     padding: 3px;
@@ -44,39 +44,38 @@ main #filtro {
 
 table {
     border-collapse: collapse;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-right: 20px;
+    width: 300px;
 }
 
 th, td {
     text-align: center;
     border: 1px solid black;
-    width: 45vw;
-    padding: 8px 0px;
-    max-width: 150px;
+    padding: 8px;
 }
 
 form > h1 {
     font-weight: lighter;
-    padding: 10px 0px 10px 50px;
+    padding: 10px 0px 10px 10px;
 }
 
 form > label {
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 form > input {
     height: 27px;
     padding: 3px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 form > button {
     color: white;
     font-weight: lighter;
     font-size: 1.1em;
-    margin-left: 50px;
+    margin-left: 10px;
     width: 100px;
     height: 40px;
     border: none;
@@ -103,4 +102,40 @@ form > button {
 
 .invisivel {
     display: none;
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        padding: 5px 0px 5px 50px;
+    }
+
+    main > h2 {
+        padding-left: 50px;
+    }
+
+    main > input#filtro {
+        margin-left: 50px;
+    }
+
+    table {
+        margin-left: 50px;
+        width: 600px;
+        height: 250px;
+    }
+
+    label {
+        margin-left: 50px;
+    }
+
+    form > h1 {
+        padding-left: 50px;
+    }
+
+    form > input {
+        margin-left: 50px;
+    }
+
+    form > button {
+        margin-left: 50px;
+    }
 }
