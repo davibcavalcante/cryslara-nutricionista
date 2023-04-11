@@ -52,7 +52,7 @@ table {
 th, td {
     text-align: center;
     border: 1px solid black;
-    padding: 3px;
+    padding: 3px 0px;
 }
 
 form > h1 {
@@ -119,8 +119,8 @@ form > button {
 
     table {
         margin-left: 50px;
-        width: 600px;
-        height: 300px;
+        width: 650px;
+        height: 200px;
     }
 
     label {
