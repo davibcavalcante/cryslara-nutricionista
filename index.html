@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/mobile.css">
-    <title>Calcula IMC</title>
+    <title>Nutricionista</title>
 </head>
 <body>
     <header>
@@ -66,25 +66,22 @@
                 </tbody>
             </table>
         </section>
-    <form action="cadastro.php" id="cadastro" autocomplete="off">
-        <h1>Adicionar novo paciente</h1>
-        <ul class="mensagem-erro">
-
-        </ul>
-        <label for="nome" class="nome-novo-paciente">Nome:</label> <br>
-        <input type="text" id="nome" placeholder="Digite o nome do paciente"> <br>
-
-        <label for="peso" class="peso-novo-paciente">Peso:</label> <br>
-        <input type="text" id="peso" placeholder="Digite o peso do paciente"> <br>
-
-        <label for="altura" class="altura-novo-paciente">Altura:</label> <br>
-        <input type="text" id="altura" placeholder="Digite a altura do paciente"> <br>
-
-        <label for="gordura" class="gordura-novo-paciente">% de Gordura</label> <br>
-        <input type="text" id="gordura" placeholder="Digite a gordura do paciente"> <br>
-
-        <button id="adiciona-paciente">Adicionar</button>
-    </form>
+    <section id="form-paciente">
+        <form action="cadastro.php" id="cadastro" autocomplete="off">
+            <h1>Adicionar novo paciente</h1>
+            <ul class="mensagem-erro">
+            </ul>
+            <label for="nome" class="nome-novo-paciente">Nome:</label> <br>
+            <input type="text" id="nome" placeholder="Digite o nome do paciente"> <br>
+            <label for="peso" class="peso-novo-paciente">Peso:</label> <br>
+            <input type="text" id="peso" placeholder="Digite o peso do paciente"> <br>
+            <label for="altura" class="altura-novo-paciente">Altura:</label> <br>
+            <input type="text" id="altura" placeholder="Digite a altura do paciente"> <br>
+            <label for="gordura" class="gordura-novo-paciente">% de Gordura</label> <br>
+            <input type="text" id="gordura" placeholder="Digite a gordura do paciente"> <br>
+            <button id="adiciona-paciente">Adicionar</button>
+        </form>
+    </section>
     <script src="js/calcula-imc.js"></script>
     <script src="js/formulario-paciente.js"></script>
     <script src="js/remove-paciente.js"></script>

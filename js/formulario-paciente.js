@@ -4,6 +4,11 @@ let adicionaPacienteBtn = document.querySelector('#adiciona-paciente')
 adicionaPacienteBtn.addEventListener('click', function(event) {
     event.preventDefault()
 
+    adicionaPacienteBtn.classList.add('clickBtn')
+    setTimeout(function() {
+        adicionaPacienteBtn.classList.remove('clickBtn')
+    }, 200)
+
     let pacienteForm = coletaDadosDoFormulario()
     let pacienteFormTr = montaTr(pacienteForm)
     let erros = exibeMensagemDeErro(pacienteForm)
