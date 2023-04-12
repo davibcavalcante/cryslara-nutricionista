@@ -58,7 +58,7 @@ section#secao-pacientes > table th, td {
 section#form-paciente {
     width: 359.906px;
     position: absolute;
-    left: 50%;
+    left: 52%;
     top: calc(100% - 50vh);
     transform: translateX(-50%);
 }
