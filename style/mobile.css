@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+header {
+    color: white;
+    font: italic normal 0.8em Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: lightcoral;
+    width: 100vw;
+}
+
+section#secao-pacientes {
+    padding: 20px;
+
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translateX(-50%);
+}
+
+section#secao-pacientes > h2 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+section#secao-pacientes > section#filtro-paciente {
+    padding: 10px 0px 5px 0px;
+}
+
+section#secao-pacientes > table {
+    border-collapse: collapse;
+}
+
+section#secao-pacientes > table th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 2px;
+}
