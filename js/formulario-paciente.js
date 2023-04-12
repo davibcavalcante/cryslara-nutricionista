@@ -18,8 +18,9 @@ adicionaPacienteBtn.addEventListener('click', function(event) {
         }
         return
     }
-
+    pacienteFormTr.classList.add('pacientes')
     tabela.appendChild(pacienteFormTr)
+    form.reset()
 })
 
 function coletaDadosDoFormulario() {

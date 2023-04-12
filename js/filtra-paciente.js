@@ -7,17 +7,18 @@ inputFiltro.addEventListener('input', function() {
         nomePacienteTd = pacientesFiltroVez.querySelector('.info-nome')
         nomePaciente = nomePacienteTd.innerText
 
-        if (inputFiltro.value.length > 0) {
-            let comparavel = nomePaciente.substring(0, inputFiltro.value.length)
-            let comparavelMinusculo = comparavel.toLowerCase()
-            let valorDigitadoMinusculo = inputFiltro.value.toLowerCase()
-            if (comparavelMinusculo != valorDigitadoMinusculo) {
-                pacientesFiltroVez.classList.add('invisivel')
+    if (inputFiltro.value.length > 0) {
+        let comparavel = nomePaciente.substring(0, inputFiltro.value.length)
+        let comparavelMinusculo = comparavel.toLowerCase()
+        let valorDigitadoMinusculo = inputFiltro.value.toLowerCase()
+        if (comparavelMinusculo != valorDigitadoMinusculo) {
+            pacientesFiltroVez.classList.add('invisivel')
             } else if (comparavelMinusculo == valorDigitadoMinusculo) {
-                pacientesFiltroVez.classList.remove('invisivel')
+            pacientesFiltroVez.classList.remove('invisivel')
             }
         } else {
-            pacientesFiltroVez.classList.remove('invisivel')
+        pacientesFiltroVez.classList.remove('invisivel')
         }
     }
 })
+

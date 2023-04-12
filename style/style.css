@@ -81,6 +81,7 @@ form > button {
     border: none;
     background-color: lightcoral;
     box-shadow: 2px 2px 0px black;
+    cursor: pointer;
 }
 
 .paciente-invalido {
@@ -120,7 +121,6 @@ form > button {
     table {
         margin-left: 50px;
         width: 650px;
-        height: 200px;
     }
 
     label {
